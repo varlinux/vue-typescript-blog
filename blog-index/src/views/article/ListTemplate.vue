@@ -1,13 +1,14 @@
 <template>
   <div class="list-template-container">
     <slot></slot>
+    <div class="list-template-main">
         <el-card v-for="item in itemList"
                  :key="item.id">
           <el-image
               class="bgs-60"
               @click="getDetail(item)"
               :src="item.first_img"></el-image>
-          <div class="article-simple-content"
+          <div class="article-simple-content display-f flex-direction-c justify-content-sb"
                @click="getDetail(item)">
             <div>
               <el-tag v-for="tag in item.tags"
@@ -24,6 +25,7 @@
             </div>
           </div>
         </el-card>
+    </div>
     <div class="loading-container">
       <div v-show="loading"
            class="list-template-loading">
