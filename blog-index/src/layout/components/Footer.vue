@@ -1,5 +1,13 @@
 <template>
   <div class="footer-content">
+    <div class="footer-ground opacity-4">
+      <el-image
+          class="footer-ground"
+          :src="background"></el-image>
+      <el-image
+          class="footer-ground footer-img-float"
+          :src="foreground"></el-image>
+    </div>
     <div class="footer-container">
       <div class="footer-item">路漫漫其修远兮♥吾将上下而求索</div>
       <div class="footer-item">本站已安全运行 {{ timeDate }} 天 {{times}}</div>

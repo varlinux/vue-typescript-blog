@@ -4,8 +4,14 @@
   font-size: 12px
   margin: 0 0.3rem
 
-.app-header
-  min-height: 4rem
+.header-container-outer
+  height: 4rem
+
+.header-container-inner
+  width: 100%
+  position: fixed
+  background-color: $base-bg-color
+  z-index: 9999
 
 .app-main
   min-height: 78vh
@@ -29,15 +35,16 @@ h1
   align-items: center
   text-align: center
   color: $base-footer-color
-  margin-bottom: 6rem
 
 .footer-ground
   height: 6rem
 
 .footer-container
-  top: 5rem
   position: absolute
-  margin-bottom: 2rem
+  top: 5rem
+  padding-bottom: 2rem
+  width: 100%
+  background-color: $base-bg-color
 
 .footer-img-float
   float: top

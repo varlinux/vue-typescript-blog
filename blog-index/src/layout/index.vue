@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-container id="container">
-        <Header class="app-header"/>
+        <Header/>
         <app-main/>
         <el-footer>
           <Footer/>

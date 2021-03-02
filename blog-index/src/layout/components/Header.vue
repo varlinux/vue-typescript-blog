@@ -1,42 +1,43 @@
 <template>
-  <div>
-    <div
-        class="container-mobile"
+  <div class="header-container-outer">
+    <div class="header-container-inner">
+      <div class="container-mobile"
         v-show="device.toString() === 'mobile'">
-      <el-button
-          class="border-0 bgco-0"
-          @click="toggleSearch"
-          icon="el-icon-search"></el-button>
-      <el-autocomplete
-          ref="search"
-          v-model="state"
-          v-show="isShowSearchInput"
-          :fetch-suggestions="querySearchAsync"
-          placeholder="请输入搜索内容"
-          @select="handleSelect"></el-autocomplete>
-      <el-button
-          class="border-0 bgco-0"
-          @click="openSidebar"
-          icon="el-icon-s-fold"></el-button>
-    </div>
-    <div
-        class="el-menu-demo"
-        v-show="device.toString() !== 'mobile'">
-      <el-menu
-          background-color="rgba(0, 0, 0, 0)"
-          mode="horizontal">
-        <el-image
-            class="github-icon"
-            @click="forwardGithub"
-            :src="url"
-            :fit="fit"></el-image>
-        <el-menu-item
-            v-for="item in menuList"
-            :index="item.dir_menu_url"
-            :key="item._id"
-            @click="goTo(item.dir_menu_url)">{{ item.dir_menu_name}}
-        </el-menu-item>
-      </el-menu>
+        <el-button
+            class="border-0 bgco-0"
+            @click="toggleSearch"
+            icon="el-icon-search"></el-button>
+        <el-autocomplete
+            ref="search"
+            v-model="state"
+            v-show="isShowSearchInput"
+            :fetch-suggestions="querySearchAsync"
+            placeholder="请输入搜索内容"
+            @select="handleSelect"></el-autocomplete>
+        <el-button
+            class="border-0 bgco-0"
+            @click="openSidebar"
+            icon="el-icon-s-fold"></el-button>
+      </div>
+      <div
+          class="el-menu-demo"
+          v-show="device.toString() !== 'mobile'">
+        <el-menu
+            background-color="rgba(0, 0, 0, 0)"
+            mode="horizontal">
+          <el-image
+              class="github-icon"
+              @click="forwardGithub"
+              :src="url"
+              :fit="fit"></el-image>
+          <el-menu-item
+              v-for="item in menuList"
+              :index="item.dir_menu_url"
+              :key="item._id"
+              @click="goTo(item.dir_menu_url)">{{ item.dir_menu_name}}
+          </el-menu-item>
+        </el-menu>
+      </div>
     </div>
   </div>
 </template>
