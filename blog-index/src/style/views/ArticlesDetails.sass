@@ -1,0 +1,80 @@
+@import "../base"
+
+/deep/ img
+  display: block
+  width: 30rem
+  margin: 1rem 0
+
+/deep/ .detail-con-main
+  & h1
+    color: #000
+    font-weight: 700
+  & h2
+    color: #000
+    font-weight: 700
+  & h3
+    color: #000
+    font-weight: 700
+  & h4
+    color: #000
+    font-weight: 700
+  & h5
+    color: #000
+    font-weight: 700
+  & h6
+    color: #000
+    font-weight: 700
+
+/deep/ .detail-con-main a
+  color: #0366d6
+
+/deep/ .detail-con-main a:hover
+  color: #4db3ff
+
+/deep/ .detail-con-main img
+  width: 100%
+
+.el-button
+  font-size: 10px
+  padding: 10px 12px
+  color: $base-font-color
+
+
+.detail-content
+  width: 100%
+  flex-direction: column
+  display: flex
+  margin: 0 auto
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+
+
+.detail-con-title
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.detail-con-tags
+  display: inline-block
+  margin: 0 3px
+
+
+.detail-con-author, .detail-con-date
+  float: right
+  line-height: 30px
+  margin-left: 20px
+
+
+.detail-con-footer-data
+  display: inline-block
+  font: normal 12px/30px "微软雅黑 Light"
+
+
+.detail-con-footer-like
+  float: right
+  display: inline-block
+  margin-right: 150px
+
+@media (min-width: $base-mobile-width)
+  .detail-content
+    width: 70%

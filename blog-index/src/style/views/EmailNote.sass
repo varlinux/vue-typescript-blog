@@ -1,0 +1,32 @@
+@import "../base.sass"
+
+.el-card
+  position: inherit
+  width: 100%
+  margin: 0 auto
+
+.el-form .suggest-email
+  width: 30%
+  min-width: 300px
+
+.el-form .suggest-title
+  width: 70%
+  min-width: 300px
+
+.el-form .suggest-content
+  width: 100%
+  min-width: 300px
+
+/deep/ .el-textarea__inner
+  resize: none
+  height: 200px
+
+.el-form-item
+  margin-top: 1rem
+
+.el-form-item:last-of-type
+  float: right
+
+@media (min-width: 992px)
+  .el-card
+    width: 48%

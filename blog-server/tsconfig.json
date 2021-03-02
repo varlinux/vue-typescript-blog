@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "../built/server",
+    "target": "es5",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*",
+    "package.json",
+    ".env"
+  ],
+  "exclude": [
+    "node_modules",
+    "test/**/*"
+  ]
+}

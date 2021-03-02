@@ -1,0 +1,35 @@
+{
+  "name": "ming-blog",
+  "version": "1.0.0",
+  "description": "Ming blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd blog-admin && npm run build:prod && cd ../blog-index && npm run build:prod && cd ../blog-server && npm run build",
+    "deploy:prod": "cross-env NODE_ENV=prod node ./deploy",
+    "deploy:test": "cross-env NODE_ENV=test node ./deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ming131419/ming-blog.git"
+  },
+  "keywords": [
+    "blog",
+    "typscript",
+    "mvc"
+  ],
+  "author": "ming",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ming131419/ming-blog/issues"
+  },
+  "homepage": "https://github.com/ming131419/ming-blog#readme",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "compressing": "^1.5.1",
+    "cross-env": "^7.0.3",
+    "lightship": "^6.6.0",
+    "ora": "^5.3.0",
+    "scp2": "^0.5.0",
+    "ssh2": "^0.8.9"
+  }
+}

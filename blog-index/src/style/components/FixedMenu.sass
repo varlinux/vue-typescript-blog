@@ -1,0 +1,43 @@
+// css3实现多个元素依次显示效果 ： https://www.jb51.net/css/591394.html
+.hide
+  display: none
+
+.fixed-menu-content
+  position: fixed
+  bottom: 3rem
+  right: 2rem
+
+.menu-card
+  display: flex
+  flex-flow: column wrap
+
+.menu-card .el-button
+  margin-bottom: 5px
+  float: right
+  -webkit-animation: fadeIn .4s ease
+  animation: fadeIn .4s ease
+  z-index: 1000
+
+/deep/ .el-button + .el-button
+  margin-left: 0
+
+.menu-button
+  float: right
+  box-shadow: 0 0 6px rgba(0, 0, 0, .12)
+
+@keyframes fadeIn
+  0%
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate(100%, 0)
+    opacity: 0
+
+  100%
+    -webkit-transform: none
+    transform: none
+    opacity: 1
+
+@-webkit-keyframes fadeIn
+  0%
+    -webkit-transform: translate3d(0, 100%, 0)
+  100%
+    -webkit-transform: none

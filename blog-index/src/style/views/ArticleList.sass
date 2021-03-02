@@ -1,0 +1,77 @@
+@import "../base.sass"
+
+.inline_block
+  display: inline-block
+
+.list-content
+  width: 100%
+  margin: 0 auto
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+
+.el-card
+  margin-top: 0.5rem
+  cursor: pointer
+
+.el-image
+  width: 100%
+  text-align: center
+  min-height: 6rem
+  max-height: 8rem
+
+/deep/ .el-image__inner
+  width: 60%
+
+/deep/ .el-card__body
+  display: flex
+  flex-direction: column
+
+.list-con-tags
+  display: inline
+  margin: 0 6px
+
+.el-tag
+  height: 1.5rem
+  line-height: 1.5rem
+  //margin-top: 0.5rem
+  min-width: 2rem
+  margin: 1rem 0.5rem 0 0
+
+.el-link
+  color: #95caff
+
+.list-con-abs
+  color: #4db3ff
+
+.list-con-data, .main-data-edit
+  margin: 10px 10px 0 0
+  font-size: 12px
+
+.main-data-edit
+  display: inline
+
+.loading-container
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 0.5rem
+
+.list-template-loading
+  background-image: url(../../assets/gif/loading-blue.gif)
+  background-size: 8rem 6rem
+  height: 6rem
+  width: 6rem
+
+.list-template-container
+  width: 100%
+  margin: auto
+
+@media (min-width: $base-mobile-width)
+  .el-card
+    margin-top: 1rem
+
+  .el-card:hover
+    box-shadow: 0 0 10px 0 rgba(22, 115, 255, 0.13)
+    transform: scale(1.05)
+
+  .list-template-container
+    width: 70%
