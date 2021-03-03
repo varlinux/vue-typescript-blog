@@ -11,7 +11,7 @@
   width: 100%
   position: fixed
   background-color: $base-bg-color
-  z-index: 9999
+  z-index: 1001
 
 .app-main
   min-height: 78vh
@@ -20,21 +20,19 @@
 // footer
 h1
   border-left: 0.4rem solid $base-font-color
+
 .el-footer
   padding: 0
   position: relative
-  //background-color: $base-bg-color
-  //border-top: 0.1rem solid $base-border-color
   margin-bottom: 5rem
   font-size: 0.6rem
-  color: $base-font-color
+  color: $base-footer-font-color
 
 .footer-content
   display: flex
   flex-direction: column
   align-items: center
   text-align: center
-  color: $base-footer-color
 
 .footer-ground
   height: 6rem
@@ -52,9 +50,6 @@ h1
 
 .footer-item
   margin: 0.2rem 0
-
-.footer-item span, .footer-item p, .footer-item a
-  color: $base-footer-color
 
 .safe-icon
   width: 0.8rem
@@ -85,7 +80,7 @@ h1
   margin-left: 6%
   margin-right: 2%
   background-color: inherit
-  color: #fff
+  // color: #fff
   border: 0
 
 //  aside start
@@ -94,13 +89,14 @@ h1
   align-items: center
   flex-flow: column wrap
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+  z-index: 1002
 
 .el-avatar
   margin-bottom: 1rem
 
 .card-item
   margin: 1rem 0
-  color: #000
+  // color: #000
 
 .github-icon:hover
   cursor: pointer

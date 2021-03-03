@@ -41,5 +41,5 @@ export default {
 
 <style lang="sass" scoped>
   @import "~@/style/layout/index.sass"
-  @import "~@/plugsin/magic/changeColor.css"
+  // @import "~@/plugsin/magic/changeColor.css"
 </style>
