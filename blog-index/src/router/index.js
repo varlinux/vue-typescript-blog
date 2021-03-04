@@ -25,17 +25,17 @@ const routes = [{
             name: 'ArticleDetails',
             component: () => import('@/views/article/ArticlesDetails')
         }, {
-            path: '/note',
-            name: 'EmailNote',
-            component: () => import('@/views/EmailNote')
+            path: '/contact',
+            name: 'Contact',
+            component: () => import('@/views/contact')
         }, {
             path: '/tag',
             name: 'Tag',
-            component: () => import('@/views/Tag')
+            component: () => import('@/views/tag')
         }, {
             path: '/timeline',
             name: 'Timeline',
-            component: () => import('@/views/TimeLine')
+            component: () => import('@/views/timeline')
         }, {
             path: '/task',
             name: 'TaskList',

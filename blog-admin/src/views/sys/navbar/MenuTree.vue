@@ -53,8 +53,8 @@
                   type="text"
                   size="mini"
                   icon="el-icon-key"
-                  @click="() => getUrl(data)">
-                查看权限
+                  @click="() => activeMenu(data)">
+                编辑权限
               </el-button>
               <el-button
                   v-show="data._id"
@@ -123,9 +123,11 @@
         this.reload()
       },
       activeMenu(data) {
+        console.log(data)
         this.$prompt('请输入权限路径', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
+          inputValue: data.dir_menu_url
         }).then(({value}) => {
           try {
             data.dir_menu_url = value // 变更权限路径
@@ -144,12 +146,6 @@
             })
           }
         })
-      },
-      getUrl(data) {
-        this.$alert('权限查看', '权限', {
-          confirmButtonText: '确定',
-          message: `权限路径为: ${ data.dir_menu_url }`
-        });
       },
       appendTop(data) {
         this.data = this.addFn('top', this.data, data)

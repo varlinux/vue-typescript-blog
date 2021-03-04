@@ -67,12 +67,8 @@ export default class BlogMenuService {
         const whereStr = {
             '_id': id
         }
-        const updateStr = {
-            'dir_menu_edit_time': DateUtils.now(),
-            'dir_menu_status': DirMenuEnum.STATUS_DEAD
-        }
         return new Promise(resolve => {
-            this.MenuDao.updateOne(whereStr, updateStr).then(res => {
+            this.MenuDao.remove(whereStr).then(res => {
                 resolve(res)
             })
         })

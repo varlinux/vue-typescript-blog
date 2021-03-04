@@ -21,8 +21,8 @@
 
 <script>
   import {mapActions} from 'vuex'
-  import ListTemplate from "./article/ListTemplate"
-  import LoadingHandler from "./mixin/LoadingHandler"
+  import ListTemplate from "../article/ListTemplate"
+  import LoadingHandler from "../mixin/LoadingHandler"
   export default {
     data() {
       return {

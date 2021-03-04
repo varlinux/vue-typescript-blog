@@ -18,7 +18,7 @@
 
 <script>
   import {mapActions} from 'vuex'
-  import DateUtils from "../utils/DateUtils";
+  import DateUtils from "@/utils/DateUtils";
 
   export default {
     name: "TimeLine",
