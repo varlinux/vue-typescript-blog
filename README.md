@@ -1,7 +1,27 @@
 # ming-blog
 
-> TIP:
-> 项目刚发布，有许多文档没有写，大家有问题（任何问题）都可以在issue中提出
+## TIP
+
+1.项目刚发布，有许多文档没有写，大家有问题（任何问题）都可以在 [issue](https://github.com/varlinux/vue-typescript-blog/issues) 中提出
+
+2.项目目前架构为 **单页应用**，所以打开耗时会比较长，还请耐心等待。（注：目前正在重新架构 ssr ，具体可关注：[https://github.com/varlinux/var-blog-index](https://github.com/varlinux/var-blog-index)）
+
+3.网站部分功能并未完善
+
+4.网站 bug 较多，有些已经排列在 **任务栏** 中，有些还未发现。可提 [Issue](https://github.com/varlinux/var-blog-index/issues)
+
+# 项目
+
+- 前台线上地址：http://varlinux.com/index
+- 后台管理线上地址：http://varlinux.com/admin
+
+## 效果图
+
+### 前台
+[![index.png](https://i.postimg.cc/CMkNv0bj/index.png)](https://postimg.cc/23jh6Pc6)
+
+### 后台
+[![admin.png](https://i.postimg.cc/c4Wc2zcP/admin.png)](https://postimg.cc/0rtmJcFC)
 
 # 描述
 一个主要使用Vue + + Typescript + Express + Node技术开发的项目，数据库用到了Mysql + MongoDB.

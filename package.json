@@ -1,16 +1,19 @@
 {
-  "name": "ming-blog",
+  "name": "vue-typescript-blog",
   "version": "1.0.0",
-  "description": "Ming blog",
+  "description": "vue-typescript-blog blog",
   "main": "index.js",
   "scripts": {
-    "build": "cd blog-admin && npm run build:prod && cd ../blog-index && npm run build:prod && cd ../blog-server && npm run build",
+    "build:admin": "cd blog-admin && npm run build:prod",
+    "build:index": "cd blog-index && npm run build:prod",
+    "build:server": "cd blog-server && npm run build",
+    "build": "npm run build:admin && npm run build:index && npm run build:server",
     "deploy:prod": "cross-env NODE_ENV=prod node ./deploy",
     "deploy:test": "cross-env NODE_ENV=test node ./deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ming131419/ming-blog.git"
+    "url": "git+https://github.com/varlinux/vue-typescript-blog.git"
   },
   "keywords": [
     "blog",
@@ -20,9 +23,9 @@
   "author": "ming",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ming131419/ming-blog/issues"
+    "url": "https://github.com/varlinux/vue-typescript-blog/issues"
   },
-  "homepage": "https://github.com/ming131419/ming-blog#readme",
+  "homepage": "https://github.com/varlinux/vue-typescript-blog#readme",
   "devDependencies": {
     "chalk": "^4.1.0",
     "compressing": "^1.5.1",
