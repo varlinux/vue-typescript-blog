@@ -4,21 +4,49 @@
 
 1.项目刚发布，有许多文档没有写，大家有问题（任何问题）都可以在 [issue](https://github.com/varlinux/vue-typescript-blog/issues) 中提出
 
-2.项目目前架构为 **单页应用**，所以打开耗时会比较长，还请耐心等待。（注：目前正在重新架构 ssr ，具体可关注：[https://github.com/varlinux/var-blog-index](https://github.com/varlinux/var-blog-index)）
+2.本项目 `master` 分支架构为 **单页应用**，所以打开耗时会比较长，还请耐心等待。
+
+我曾经搞过热加载，但后来查看文章说热加载对首屏加载时间没有作用，之后我就没再研究热加载了。
+
+综合考虑后，还是决定使用 SSR 重构项目。
+
+SSR 重构项目可查看：
+
+- Blog前台 [var-blog-index](https://github.com/varlinux/var-blog-index)
+- Blog后台 [var-blog-admin](https://github.com/varlinux/var-blog-admin)
+- Blog后端服务 [var-blog-server](https://github.com/varlinux/var-blog-server)
+
+**强烈推SSR，因为单页打开项目是真的慢，一般超过30s（博主目前出于渣渣阶段，暂时都没有考虑性能优化的呢，如果您对性能优化或者优化以上项目感兴趣，随时都恭候大佬的到来呢~联系我哦~）**
 
 3.网站部分功能并未完善
 
 4.网站 bug 较多，有些已经排列在 **任务栏** 中，有些还未发现。可提 [Issue](https://github.com/varlinux/var-blog-index/issues)
 
+QQ：1398596609
+
+QQ邮箱：1398596609@qq.com
+
+Google邮箱：czm141319@gmail.com
+
 # 项目
 
-- 前台线上地址：http://varlinux.com/index
-- 后台管理线上地址：http://varlinux.com/admin
+- 前台线上地址：http://varlinux.com
+- 后台管理线上地址：需要的小伙伴可通过上述方式联系博主，不会收费什么的，只是出于安全考虑没有爆露出来
+
 
 ## 效果图
 
-### 前台
+### PC端
 [![index.png](https://i.postimg.cc/CMkNv0bj/index.png)](https://postimg.cc/23jh6Pc6)
+[![pc-tag.png](https://i.postimg.cc/tJS8BML2/pc-tag.png)](https://postimg.cc/2LWH62jZ)
+[![pc-timeline.png](https://i.postimg.cc/qqM9XTZN/pc-timeline.png)](https://postimg.cc/hz6ycHnn)
+[![pc-task.png](https://i.postimg.cc/9MB67M13/pc-task.png)](https://postimg.cc/XGp1MnTx)
+[![pc-interview.png](https://i.postimg.cc/MZ9kZnvV/pc-interview.png)](https://postimg.cc/CdnrmLCx)
+[![pc-about.png](https://i.postimg.cc/G2r0tYFJ/pc-about.png)](https://postimg.cc/LqyQ0J0n)
+
+### 移动端
+[![mobile1.png](https://i.postimg.cc/Vv6bZ7qY/mobile1.png)](https://postimg.cc/gXCJnHt5)
+[![mobile2.png](https://i.postimg.cc/0QZwfgJW/mobile2.png)](https://postimg.cc/9RR0mnbZ)
 
 ### 后台
 [![admin.png](https://i.postimg.cc/c4Wc2zcP/admin.png)](https://postimg.cc/0rtmJcFC)
