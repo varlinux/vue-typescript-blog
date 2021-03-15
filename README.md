@@ -45,8 +45,8 @@ Google邮箱：czm141319@gmail.com
 [![pc-about.png](https://i.postimg.cc/G2r0tYFJ/pc-about.png)](https://postimg.cc/LqyQ0J0n)
 
 ### 移动端
-[![mobile1.png](https://i.postimg.cc/Vv6bZ7qY/mobile1.png)](https://postimg.cc/gXCJnHt5)
-[![mobile2.png](https://i.postimg.cc/0QZwfgJW/mobile2.png)](https://postimg.cc/9RR0mnbZ)
+[![mobile-2.png](https://i.postimg.cc/xdbJnkYP/mobile-2.png)](https://postimg.cc/hJcP0tXJ)
+[![16157992625768.png](https://i.postimg.cc/L67zzFyh/16157992625768.png)](https://postimg.cc/w7XypZYd)
 
 ### 后台
 [![admin.png](https://i.postimg.cc/c4Wc2zcP/admin.png)](https://postimg.cc/0rtmJcFC)
